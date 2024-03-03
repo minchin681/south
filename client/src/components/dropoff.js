@@ -16,7 +16,7 @@ function Dropoff() {
   
     const fetchData = async () => {
       try {
-          const response = await fetch('wash-house.azurewebsites.net');
+          const response = await fetch('https://wash-house.azurewebsites.net');
           const result = await response.json();
           setApp(result);
       } catch (error) {
