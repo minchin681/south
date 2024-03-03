@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const path = require('path')
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://minster681:abc903681@wash-house.w595kyx.mongodb.net/?retryWrites=true&w=majority&appName=wash-house";
+const uri = "mongodb+srv://minster681:abc903681@cluster0.p4uwkdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(uri, {
   serverApi: {
