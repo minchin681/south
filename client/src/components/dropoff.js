@@ -10,6 +10,7 @@ function Dropoff() {
     const [day, setDay] = useState('')
     const [name, setName] = useState('');
 
+    /*
     useEffect(() => {
         fetchData();
     }, []);
@@ -23,7 +24,7 @@ function Dropoff() {
           console.error('Error fetching data:', error);
       }
     };
-
+    */
     let done = []
 
     data.map((tyme, i) => {
