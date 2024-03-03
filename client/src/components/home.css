@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.home {
+    background-color: #F0F8FF;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.info {
+   text-align: center;
+}
+
+.jumbo {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.hub {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.two-buttons {
+    padding-top: 20px;
+}
+
+.left-button {
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 10px 10px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 4px;
+}
+
+.right-button {
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 10px 10px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 4px;
+}
+
+.we-provide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.what-we-do h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 45px;
+
+}
+
+.what-we-do .we-provide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    height: 300px;
+    background-color: #f1f1f1;
+    width: 40%;
+}
+
+.business > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+svg {
+    fill: "green"
+}
+
+.wash-fold {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+
