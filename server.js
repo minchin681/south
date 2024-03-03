@@ -2,7 +2,10 @@ const express = require('express')
 const app = express()
 const port = 8080;
 const bodyParser = require('body-parser');
+const cors = require("cors");
+
 app.use(bodyParser.json());
+app.use(cors());
 const path = require('path')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://minster681:abc903681@cluster0.p4uwkdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
