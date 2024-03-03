@@ -10,21 +10,6 @@ function Dropoff() {
     const [day, setDay] = useState('')
     const [name, setName] = useState('');
 
-    /*
-    useEffect(() => {
-        fetchData();
-    }, []);
-  
-    const fetchData = async () => {
-      try {
-          const response = await fetch("http://wash-house.azurewebsites.net");
-          const result = await response.json();
-          setApp(result);
-      } catch (error) {
-          console.error('Error fetching data:', error);
-      }
-    };
-    */
     let done = []
 
     data.map((tyme, i) => {
