@@ -84,7 +84,7 @@ function Dropoff() {
     function buttonKlick() {
         axios({
           method: 'post',
-          url: 'wash-house.azurewebsites.net/add',
+          url: 'https://wash-house.azurewebsites.net/add',
           data: {name, day, clock}
         }).then((response) => {
             if(response.status == 200) {
