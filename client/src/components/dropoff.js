@@ -16,7 +16,7 @@ function Dropoff() {
   
     const fetchData = async () => {
       try {
-          const response = await fetch('https://wash-house.azurewebsites.net');
+          const response = await fetch('http://wash-house.azurewebsites.net');
           const result = await response.json();
           setApp(result);
       } catch (error) {
@@ -84,7 +84,7 @@ function Dropoff() {
     function buttonKlick() {
         axios({
           method: 'post',
-          url: 'https://wash-house.azurewebsites.net/add',
+          url: 'http://wash-house.azurewebsites.net/add',
           data: {name, day, clock}
         }).then((response) => {
             if(response.status == 200) {
