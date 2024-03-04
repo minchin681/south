@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const path = require('path')
+/*
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://minster681:abc903681@cluster0.p4uwkdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
@@ -31,6 +32,8 @@ async function run() {
   }
 }
 run().catch(console.dir);
+*/
+
 
 app.use(express.static("./client/build"))
 
