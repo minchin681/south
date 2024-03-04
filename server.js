@@ -40,6 +40,7 @@ app.get("*", (req, res) => {
 });
 
 app.post("/add", (req, res) => {
+ res.set('Access-Control-Allow-Origin', '*');
  console.log("add route hit")
 });
 
