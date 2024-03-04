@@ -39,9 +39,9 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
-app.post("/add", (req, res) => {
+app.get("/add", (req, res) => {
  res.set('Access-Control-Allow-Origin', '*');
- console.log("add route hit")
+ res.send("add route hit")
 });
 
 app.listen(port, () => {
