@@ -2,10 +2,10 @@ const express = require('express')
 const app = express()
 const port = 8080;
 const bodyParser = require('body-parser');
-const cors = require("cors");
+
 
 app.use(bodyParser.json());
-app.use(cors());
+
 const path = require('path')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://minster681:abc903681@cluster0.p4uwkdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
@@ -39,10 +39,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
-app.get("/add", (req, res) => {
- res.set('Access-Control-Allow-Origin', '*');
- res.send("add route hit")
-});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
