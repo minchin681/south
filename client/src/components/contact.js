@@ -1,9 +1,22 @@
-
+import axios from 'axios';
 
 function Contact() {
+
+    let baseUrl = "https://wash-house.azurewebsites.net";
+
+    function butonclick(e) {
+        e.preventDefault();
+        axios.post(`${baseUrl}`)
+    }
+
+
+
+
     return (
         <div>
-            <h3>contact component</h3>
+            <button className="the-buttons" onClick={butonclick}>
+                click to api
+            </button>
         </div>
     )
 }
